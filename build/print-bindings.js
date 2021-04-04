@@ -26,6 +26,6 @@ const bindingNames = BINDINGS
     // The _ prefix here is required for references in the built code
     .map(def => `_${def[0]}`)
     // Add core C functions required by the lib
-    .concat(['_malloc', '_calloc']);
+    .concat(['_malloc', '_calloc', '_free']);
 
 console.log(JSON.stringify(bindingNames));
