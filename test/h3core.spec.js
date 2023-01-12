@@ -271,10 +271,9 @@ test('cellToBoundary - 10-Vertex Pentagon', assert => {
         // Repeat first point
         [55.94007484027041, 12.754829243237465]
     ];
-    // TODO: Not clear why the precision is so off here
     assert.deepEqual(
-        toLowPrecision(latlngs, 7),
-        toLowPrecision(expectedlatlngs, 7),
+        toLowPrecision(latlngs),
+        toLowPrecision(expectedlatlngs),
         'Coordinates match expected'
     );
     assert.end();
